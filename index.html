@@ -8,27 +8,42 @@
         <meta name="keywords" content="Acme">
         <link rel="stylesheet" href="style.css">
         <script defer src="app.js"></script>
+        <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
     </head>
     <body class="container">
-        <header class="acme-hdr">
-            <img src="./assets/anvil_white.png" alt="Acme logo black anvil on white background" class="logo">
-            <nav class="acme-nav-bar">
+        <header id="header" class="acme-hdr sticky">
+            <nav id="nav-bar" class="acme-nav-bar">
                 <ul>
-                    <li class="nav-bullets"><a href="#" class="nav-links">Our Guarantee</a></li>
-                    <li class="nav-bullets"><a href="#" class="nav-links">Testimonials</a></li>
-                    <li class="nav-bullets"><a href="#" class="nav-links">News</a></li>
-                    <li class="nav-bullets"><a href="#" class="nav-links">Work Here</a></li>
-                    <li class="nav-bullets"><a href="#" class="nav-links">About Us</a></li>
                     <li class="nav-bullets">
+                        <a href="#" class="nav-link"><img src="./assets/anvil_white.png" alt="Acme logo black anvil on white background" id="header-img" class="logo"></a>
+                    </li>
+                    <li class="nav-bullets flex-center">
+                        <a href="/index.html.card-1" class="nav-link">Our Guarantee</a>
+                    </li>
+                    <li class="nav-bullets flex-center">
+                        <a href="/index.htmlquote-card" class="nav-link">Testimonials</a>
+                    </li>
+                    <li class="nav-bullets flex-center">
+                        <a href="/index.html.acme-ftr" class="nav-link">News</a>
+                    </li>
+                    <li class="nav-bullets flex-center">
+                        <a href="/index.html.acme-ftr" class="nav-link">Work Here</a>
+                    </li>
+                    <li class="nav-bullets flex-center">
+                        <a href="/index.html.acme-ftr" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-bullets flex-center">
                         <a href="#" class="nav-links"><button class="btn primary-btn">Buy Anvils</button></a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <main>
+        <main id="main">
             <section class="acme-one hero-image">
-                <h1>Built to Last</h1>
-                <p>Our anvils come with a lifetime warranty.</p>
+                <article class="bottom-left">
+                    <h1>Built to Last</h1>
+                    <p>Our anvils come with a lifetime warranty.</p>
+                </article>
             </section>
             <section class="acme-two">
                 <article class="card-1 cards">
@@ -46,7 +61,7 @@
                     <button class="btn primary-btn">Learn More</button>
                 </article>
                 <article class="card-3 cards">
-                    <div class="card-image-3 card-images">
+                    <div id="video" class="card-image-3 card-images" onmouseenter='this.class="card-image-3-gif card-images"' onmouseout='this.class="card-image-3 card-images"'>
                         <h2>Our Assurance</h2>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
@@ -68,7 +83,7 @@
                 </article>
             </section>
         </main>
-        <footer class="acme-ftr">
+        <footer id="footer" class="acme-ftr">
             <article class="ftr-1">
                 <ul class="ftr-nav">
                     <li><a href="#">Our Guarantee</a></li>
@@ -92,9 +107,11 @@
             </article>
             <article class="ftr-3"></article>
                 <h3>Our Newsletter</h3>
-                <input type="text" name="name" id="name" placeholder="Your Name">
-                <input type="email" name="email" id="email" placeholder="Your Email">
-                <button type="submit" class="btn primay-btn">Submit</button>
+                <form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
+                    <input type="text" name="name" id="name" placeholder="Your Name">
+                    <input type="email" name="email" id="email" placeholder="Your Email">   
+                    <input type="submit" value="Submit" class="btn primary-btn" id="submit">
+                </form>
             <article class="ftr-4">
                 <img src="./assets/anvil_black.png" alt="acme logo white anvil on black background">
                 <p>121 King St., Melbourne</p>
