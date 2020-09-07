@@ -45,10 +45,12 @@ body {
 .acme-hdr {
     width: 100%;
     height: 6rem;
+
 }
 
 .acme-nav-bar {
     width: 100%;
+    z-index: 99;
 }
 
 .acme-nav-bar ul {
@@ -119,6 +121,7 @@ body {
     width: 100%;
     top: 0;
     background: #fff;
+    z-index: 9999;
 }
 
 
@@ -205,6 +208,8 @@ body {
 
 .quote-card {
     width: 550px;
+    text-align: center;
+    font: normal normal normal 24px/40px;
 }
 
 .no-show-btn{
@@ -220,6 +225,7 @@ body {
     border-width: 0 5px 5px 0;
     display: inline-block;
     padding: 10px;
+    z-index: 1;
 }
 
 .arrow-left{
@@ -232,8 +238,14 @@ body {
     -webkit-transform: rotate(-45deg);
 }
 
-.quote-card-quote, .quote-card-name {
+.quote-card-quote {
     font-size: 24px;
+    line-height: 40px;
+}
+
+.quote-card-name {
+    font-size: 20px;
+    line-height: 28px;
 }
 
 .quote-card-name, .quote-card-title {
@@ -247,7 +259,12 @@ body {
     margin: 25px auto;
 }
 
-.dot {
+    .dot-box button {
+        height: 20px;
+        width: 20px;
+    }
+    
+    .dot {
     height: 14px;
     width: 14px;
     background-color: transparent;
@@ -266,5 +283,88 @@ body {
     color: #fff;
     width: 100%;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.acme-ftr article {
+    width: 212px;
+    height: 267px;
+    margin-top: 67px;
+    margin-bottom: 50px;
+}
+
+.acme-ftr h3 {
+    font-size: 23px;
+    line-height: 27px;
+}
+
+.acme-ftr a { 
+    color: #FFEE06;
+    text-decoration: none;
+}
+
+.acme-ftr li a {
+    line-height: 28px;
+    font: 20px;
+}
+.acme-ftr ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.ftr-2 {
+    width: 344px;
+}
+
+.ftr-2 a {
+    color: unset;
+    line-height: unset;
+    font-size: unset;
+}
+
+.news-item {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+    font-size: 16px;
+    line-height: 20px;
+    width: 344px;
+}
+    .news-item img {
+        width: 69px;
+        height: 69px;
+        margin-right: 24px;
+    }
+
+    .news-item p {
+        width: 251px;
+    }
+
+.ftr-3, #form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form input {
+    height: 35px;
+    width: 257px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 16px;
+    padding: 0px 0px 0px 11px;
+}
+
+#form #submit {
+    width: 89px;
+    height: 48px;
+    font-size: 20px;
+    text-align: center;
+    padding: 11px 0px 9px 0px;
 }
 
