@@ -289,9 +289,13 @@ body {
 
 .acme-ftr article {
     width: 212px;
-    height: 267px;
+    height: 210px;
     margin-top: 67px;
     margin-bottom: 50px;
+}
+
+.ftr-nav {
+    height: auto;
 }
 
 .acme-ftr h3 {
@@ -307,6 +311,10 @@ body {
 .acme-ftr li a {
     line-height: 28px;
     font: 20px;
+    margin-bottom: 5px;
+}
+.acme-ftr li {
+    margin-bottom: 5px;
 }
 .acme-ftr ul {
     list-style-type: none;
@@ -366,5 +374,24 @@ body {
     font-size: 20px;
     text-align: center;
     padding: 11px 0px 9px 0px;
+}
+
+.mobile {
+    display: none;
+}
+
+@media screen and (min-width: 1080px) {
+
+    .acme-ftr {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .desktop{
+        display: none;
+    }
 }
 
