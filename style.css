@@ -206,6 +206,39 @@ body {
 .quote-card {
     width: 550px;
 }
+
+.no-show-btn{
+    height: 31.48px;
+    width: 15.75px;
+    margin: 200px 50px 0 50px;
+    background: transparent;
+    border: transparent;
+}
+
+.arrows {
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+.arrow-left{
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.arrow-right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.quote-card-quote, .quote-card-name {
+    font-size: 24px;
+}
+
+.quote-card-name, .quote-card-title {
+    text-align: center;
+}
 /* FOOTER */
 
 .acme-ftr {
