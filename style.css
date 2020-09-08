@@ -16,43 +16,28 @@ body {
 .logo {
     height: 4rem;
 }
-
 .btn {
     border-radius: 15px;
     border: none;
     padding: 10px;
 }
-
 .primary-btn {
     background-color: #FFEE06;
 }
-
-
 /* NAV AND HERO */
 
 #header-img {
-    height: 4rem;
+    height: 48px;
 }
-
 #nav-bar {
     height: 178px;
 }
-
-#nav-bar .logo {
-    background-color: #000;
-}
-
 .acme-hdr {
     width: 100%;
-    height: 6rem;
-
 }
-
 .acme-nav-bar {
     width: 100%;
-    z-index: 99;
 }
-
 .acme-nav-bar ul {
     display: flex;
     justify-content: space-evenly;
@@ -63,6 +48,7 @@ body {
     display: flex;
     align-items: center;
 }
+
 .hero-image{
     background-image: url(./assets/image1.png);
     background-attachment: relative;
@@ -110,8 +96,6 @@ body {
 .nav-bullets:nth-of-type(6) { flex-grow: 1; }
 .nav-bullets:nth-of-type(7) { flex-grow: 2; }
 
-
-
 .sticky {
     position:-webkit-sticky;
     position:sticky;
@@ -119,7 +103,6 @@ body {
     display: flex;
     flex-direction: row;
     width: 100%;
-    top: 0;
     background: #fff;
     z-index: 9999;
 }
@@ -139,11 +122,11 @@ body {
 .acme-two {
     display: flex;
     display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;
 }
 
 .cards {
@@ -193,12 +176,12 @@ body {
     background-image: url(./assets/image5.png);
     width: 100%;
     height: 412px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: stretch;    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: stretch;    
 }
 
     .acme-three article {
@@ -384,11 +367,11 @@ body {
 
 .news-item {
     display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
     font-size: 16px;
     line-height: 20px;
     width: 344px;
@@ -424,23 +407,152 @@ body {
     text-align: center;
     padding: 11px 0px 9px 0px;
 }
-
-.mobile {
+.desktop-toggle{
     display: none;
 }
 
-@media screen and (min-width: 1080px) {
+.mobile-toggle {
+    display: initial;
+}
 
-    .acme-ftr {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
+@media screen and (max-width: 67.5em) {
+
+    /* NAV */
+
+    #nav-bar {
+        height: 70px;
+        z-index: 10000;
+        opacity: 1;
     }
 
-    .desktop{
+    .btn{
+        width: 111px;
+        height: 48px;
+        display: flex;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration-line: none;
+        line-height: 28px;
+        font-size: 20px;
+        text-decoration-style: none;
+    }
+
+
+    .nav-bullets a {
+        text-decoration: none;
+    }
+
+    .menu-svg {
+        width: 28px ;
+        margin: 0 5px;
+    }
+    /* HERO */
+
+    #main {
+        margin-top: 50px;
+    }
+    
+    .hero-image {
+        background-image: url(./assets/image6.png);
+        margin-top: 74px;
+        width: 100%;
+        height: 206px;
+        background-position-x: 0;
+        height: 206px;
+    }
+    
+    .hero-image .bottom-left {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: stretch;
+        align-content: stretch;
+        text-align: center;
+        padding: 0 0 35px 0;
+    }
+    
+    .hero-image article h1 {
+        font-size: 32px;
+        line-height: 37px;
+        margin: 9px auto;
+    }
+    
+    .hero-image article p {
+        margin: 0 auto;
+    }
+    /* SECTION TWO */
+    .acme-two {
+        width: 90%;
+        margin: 0 5%;
+    }
+    .cards, .card-images {
+        width: auto;
+    }
+
+        .card-images h2 {
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .card-images .btn.primary-btn {
+            width: 121px;
+            font-size: 19px;
+            line-height: 28px;
+            text-transform: initial;
+        }
+
+    
+    /* SECTION THREE */
+
+    .quote-card {
+        width: auto;
+        height: 382px;
+    }
+    
+    .no-show-btn{
+        width: auto;
+        margin: 275px auto 0 auto;
+    }
+    
+    .quote-card-quote {
+        font-size: 18px;
+        line-height: 32px;
+        margin-top: 65px;
+    }
+
+    .carousel__item {
+        padding: 0;
+    }
+
+    .arrows{
+        position: relative
+    }
+
+    .arrow-left {
+        left: 28px;
+    }
+    .arrow-right {
+        right: 28px;
+    }
+    
+    /* FOOTER */
+    .acme-ftr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    }
+
+
+    .mobile-toggle {
         display: none;
+    }
+
+    .desktop-toggle {
+        display: initial;
     }
 }
 
