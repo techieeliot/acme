@@ -21,6 +21,64 @@ body {
 .primary-btn {
     background-color: #FFEE06;
 }
+
+#hamburger-menu{
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.hide {
+    max-height: 0 !important;
+}
+
+.dropdown{
+    margin-bottom: 1em;
+    height: 100%;
+}
+
+.dropdown .title #svg-menu {
+    transition: transform .3s;
+}
+
+.dropdown .dropdown-content{
+    transition: max-height .5s ease-out;
+    max-height: 20em;
+    overflow: hidden;
+    display: block;
+    top: 78px;
+    background-color: black;
+    border-radius: 15px;
+    border: none;
+}
+.dropdown .menu-dropdown {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.dropdown .menu-dropdown .dropdown-link {
+    color: white;
+}
+.dropdown .menu-dropdown .dropdown-link:hover {
+    background-color: #808080;
+}
+.dropdown .dropdown-content .dropdown-bullets:hover{
+    background: #808080;
+}
+
+.pointerCursor:hover{
+	cursor: pointer;
+}
+
+.bring-to-front{
+    display: block !important;
+}
+
+.send-to-back{
+    display: none;
+}
+
 /* NAV AND HERO */
 
 .logo {
@@ -460,10 +518,64 @@ body {
         text-decoration: none;
     }
 
-    .menu-svg {
+    #menu-svg {
         width: 28px ;
-        margin: 0 5px;
+        margin: 0;
     }
+
+    #close-svg{
+        display: none;
+        width: 28px;
+        padding-right: 0.5em;
+    }
+
+    .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      
+      .dropdown .dropbtn {
+        cursor: pointer;
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+
+      .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+        background-color: black;
+        color: #FFEE06;
+      }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      
+      .show {
+        display: block;
+      }
     /* HERO */
 
     #main {

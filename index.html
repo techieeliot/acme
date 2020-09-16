@@ -36,12 +36,30 @@
                         <a href="#" class="nav-links"><button class="btn primary-btn">Buy Anvils</button></a>
                     </li>
                     <li class="nav-bullets flex-center desktop-toggle">
-                        <a href="#" class="hamburger-menu">
-                            <button class="btn primary-btn">
-                                Menu
-                                <img src="./assets/menu.svg" alt="three horizontal lines" class="menu-svg">
-                            </button>
-                        </a>
+                        <div class="btn primary-btn dropdown pointerCursor" id="hamburger-menu">
+                            <div class="title">Menu</div>
+                            <img src="./assets/menu.svg" alt="three horizontal lines" id="menu-svg">
+                            <img src="./assets/close.svg" alt="three horizontal lines" id="close-svg">
+                            <div class="dropdown-content">
+                                <ul class="menu-dropdown hide">
+                                    <li class="dropdown-bullets flex-center" id="dropdown1">
+                                        <a href="/index.html.card-1" class="dropdown-link">Our Guarantee</a>
+                                    </li>
+                                    <li class="dropdown-bullets flex-center"  id="dropdown2">
+                                        <a href="/index.htmlquote-card" class="dropdown-link">Testimonials</a>
+                                    </li>
+                                    <li class="dropdown-bullets flex-center"  id="dropdown3">
+                                        <a href="/index.html.acme-ftr" class="dropdown-link">News</a>
+                                    </li>
+                                    <li class="dropdown-bullets flex-center" id="dropdown4">
+                                        <a href="/index.html.acme-ftr" class="dropdown-link">Work Here</a>
+                                    </li>
+                                    <li class="dropdown-bullets flex-center" id="dropdown5">
+                                        <a href="/index.html.acme-ftr" class="dropdown-link">About Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </nav>
