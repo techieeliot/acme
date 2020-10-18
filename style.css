@@ -480,6 +480,21 @@ body {
     display: initial;
 }
 
+/* VIDEO */
+
+.acme-video-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: horizontal;
+    overflow: auto;
+    max-width: 100%;
+    height: calc(60vh - 16px);
+}
+
 @media screen and (max-width: 67.5em) {
 
     /* NAV */

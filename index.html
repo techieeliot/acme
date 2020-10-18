@@ -22,25 +22,25 @@
             <nav id="nav-bar" class="acme-nav-bar">
                 <ul>
                     <li class="nav-bullets">
-                        <a href="#" class="nav-link"><img src="./assets/anvil_white.png" alt="Acme logo black anvil on white background" id="header-img" class="logo"></a>
+                        <a href="#main" class="nav-link"><img src="./assets/anvil_white.png" alt="Acme logo black anvil on white background" id="header-img" class="logo"></a>
                     </li>
                     <li class="nav-bullets flex-center mobile-toggle">
-                        <a href="/index.html.card-1" class="nav-link">Our Guarantee</a>
+                        <a href="#our-guarantee" class="nav-link">Our Guarantee</a>
                     </li>
                     <li class="nav-bullets flex-center mobile-toggle">
-                        <a href="/index.htmlquote-card" class="nav-link">Testimonials</a>
+                        <a href="#testimonials" class="nav-link">Testimonials</a>
                     </li>
                     <li class="nav-bullets flex-center mobile-toggle">
-                        <a href="/index.html.acme-ftr" class="nav-link">News</a>
+                        <a href="#news" class="nav-link">News</a>
                     </li>
                     <li class="nav-bullets flex-center mobile-toggle">
-                        <a href="/index.html.acme-ftr" class="nav-link">Work Here</a>
+                        <a href="#newsletter" class="nav-link">Work Here</a>
                     </li>
                     <li class="nav-bullets flex-center mobile-toggle">
-                        <a href="/index.html.acme-ftr" class="nav-link">About Us</a>
+                        <a href="#footer" class="nav-link">About Us</a>
                     </li>
                     <li class="nav-bullets flex-center mobile-toggle">
-                        <a href="#" class="nav-links"><button class="btn primary-btn">Buy Anvils</button></a>
+                        <a href="#hero" class="nav-links"><button class="btn primary-btn">Buy Anvils</button></a>
                     </li>
                     <li class="nav-bullets flex-center desktop-toggle">
                         <div class="btn primary-btn dropdown pointerCursor" id="hamburger-menu">
@@ -50,19 +50,19 @@
                             <div class="dropdown-content">
                                 <ul class="menu-dropdown hide">
                                     <li class="dropdown-bullets flex-center" id="dropdown1">
-                                        <a href="/index.html.card-1" class="dropdown-link">Our Guarantee</a>
+                                        <a href="#our-guarantee" class="dropdown-link">Our Guarantee</a>
                                     </li>
                                     <li class="dropdown-bullets flex-center"  id="dropdown2">
-                                        <a href="/index.htmlquote-card" class="dropdown-link">Testimonials</a>
+                                        <a href="#testimonials" class="dropdown-link">Testimonials</a>
                                     </li>
                                     <li class="dropdown-bullets flex-center"  id="dropdown3">
-                                        <a href="/index.html.acme-ftr" class="dropdown-link">News</a>
+                                        <a href="#news" class="dropdown-link">News</a>
                                     </li>
                                     <li class="dropdown-bullets flex-center" id="dropdown4">
-                                        <a href="/index.html.acme-ftr" class="dropdown-link">Work Here</a>
+                                        <a href="#newsletter" class="dropdown-link">Work Here</a>
                                     </li>
                                     <li class="dropdown-bullets flex-center" id="dropdown5">
-                                        <a href="/index.html.acme-ftr" class="dropdown-link">About Us</a>
+                                        <a href="#footer" class="dropdown-link">About Us</a>
                                     </li>
                                 </ul>
                             </div>
@@ -72,14 +72,14 @@
             </nav>
         </header>
         <main id="main">
-            <section class="acme-one hero-image">
+            <section class="acme-one hero-image" id="hero">
                 <article class="bottom-left">
                     <h1>Built to Last</h1>
                     <p>Our anvils come with a lifetime warranty.</p>
                 </article>
             </section>
             <section class="acme-two">
-                <article class="card-1 cards">
+                <article class="card-1 cards" id="our-guarantee">
                     <div class="card-image-1 card-images">
                         <h2>Our Guarantee</h2>
                     </div>
@@ -94,15 +94,23 @@
                     <button class="btn primary-btn">Learn More</button>
                 </article>
                 <article class="card-3 cards mobile-toggle">
-                    <div id="video" class="card-image-3 card-images" onmouseenter='this.class="card-image-3-gif card-images"' onmouseout='this.class="card-image-3 card-images"'>
+                    <div class="card-image-3 card-images" onmouseenter='this.class="card-image-3-gif card-images"' onmouseout='this.class="card-image-3 card-images"'>
                         <h2>Our Assurance</h2>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                     <button class="btn primary-btn">Learn More</button>
                 </article>
             </section>
+            <section class="acme-video-wrapper">
+                <iframe id="video" width="720" height="405" 
+                src="https://www.youtube.com/embed/sb-3JjVocRM?start=14&rel=0&modestbranding=1&autohide=1&showinfo=1&controls=0" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- <iframe id="video" type="text/html" width="720" height="405"
+                src="https://www.youtube.com/embed/sb-3JjVocRM"
+                frameborder="0" allowfullscreen></iframe>        -->
+            </section>
             <section class="acme-three">
-                <article>
+                <article id="testimonials">
                     <button class="no-show-btn carousel__button--next"><i class="arrows arrow-left"></i></button>
                     <div class="quote-card carousel-wrapper">
                         <div class="carousel">
@@ -143,7 +151,7 @@
                     <li><a href="#">Buy Anvils</a></li> 
                 </ul>
             </article>
-            <article class="ftr-2 mobile-toggle">
+            <article class="ftr-2 mobile-toggle" id="news">
                 <h3>Latest News</h3>
                 <div class="news-item item-1">
                     <img src="./assets/image8.png" alt="">
@@ -154,7 +162,7 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsa rerum temporibus.</p>
                 </div>
             </article>
-            <article class="ftr-3 mobile-toggle">
+            <article class="ftr-3 mobile-toggle" id="newsletter">
 
                 <h3>Our Newsletter</h3>
                 <form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
@@ -163,7 +171,7 @@
                     <input type="submit" value="Submit" class="btn primary-btn" id="submit">
                 </form>
             </article>
-            <article class="ftr-4">
+            <article class="ftr-4" id="logo">
                 <img src="./assets/anvil_black.png" alt="acme logo white anvil on black background">
                 <address>
                     121 King St., Melbourne<br>
